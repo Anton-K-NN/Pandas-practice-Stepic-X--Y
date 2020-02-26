@@ -1,0 +1,5 @@
+import pandas as pd
+import numpy as np
+
+heroes=pd.read_csv('https://stepik.org/media/attachments/course/4852/dota_hero_stats.csv')
+heroes.groupby(['attack_type', 'primary_attr']).primary_attr.count()
